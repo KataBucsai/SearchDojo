@@ -8,7 +8,7 @@ namespace SearchDojo
     {
         public static List<string> Search(string text, string pattern)
         {
-            var matches = Regex.Matches(text, pattern);
+            var matches = Regex.Matches(text, pattern, RegexOptions.IgnoreCase);
             List<string> results = new List<string>();
             foreach (Match match in matches)
             {

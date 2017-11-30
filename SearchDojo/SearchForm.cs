@@ -15,5 +15,14 @@ namespace SearchDojo
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, System.EventArgs e)
+        {
+            var results = PatternSearcher.Search(textBoxInputText.Text, textBoxPattern.Text);
+            foreach (var result in results)
+            {
+                textBoxMatched.Text += result + "\r\n";
+            }
+        }
     }
 }

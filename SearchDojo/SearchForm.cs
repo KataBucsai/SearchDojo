@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -10,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SearchDojo
 {
-    public partial class Form1 : Form
+    public partial class SearchForm : Form
     {
-        public Form1()
+        public SearchForm()
         {
             InitializeComponent();
         }

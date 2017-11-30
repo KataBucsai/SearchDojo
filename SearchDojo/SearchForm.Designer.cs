@@ -1,6 +1,6 @@
 ﻿namespace SearchDojo
 {
-    partial class Form1
+    partial class SearchForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(350, 49);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -96,7 +97,7 @@
             this.labelPattern.TabIndex = 6;
             this.labelPattern.Text = "Pattern";
             // 
-            // Form1
+            // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,8 +109,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "SearchForm";
+            this.Text = "Magic Search";
             this.ResumeLayout(false);
             this.PerformLayout();
 

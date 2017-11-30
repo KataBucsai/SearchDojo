@@ -53,6 +53,7 @@
             this.textBoxInputText.Name = "textBoxInputText";
             this.textBoxInputText.Size = new System.Drawing.Size(237, 179);
             this.textBoxInputText.TabIndex = 1;
+            this.textBoxInputText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validate_search_input);
             // 
             // textBoxPattern
             // 
@@ -60,9 +61,12 @@
             this.textBoxPattern.Name = "textBoxPattern";
             this.textBoxPattern.Size = new System.Drawing.Size(172, 20);
             this.textBoxPattern.TabIndex = 2;
+            this.textBoxPattern.TextChanged += new System.EventHandler(this.validate_search_input);
             // 
             // btnSearch
             // 
+            this.btnSearch.Enabled = false;
+            this.btnSearch.ForeColor = System.Drawing.Color.Gray;
             this.btnSearch.Location = new System.Drawing.Point(350, 302);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);

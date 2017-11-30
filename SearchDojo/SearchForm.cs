@@ -24,5 +24,18 @@ namespace SearchDojo
                 textBoxMatched.Text += result + "\r\n";
             }
         }
+
+        private void validate_search_input(object sender, System.EventArgs e)
+        {
+            if (textBoxInputText.Text.Length > 0 && textBoxPattern.Text.Length > 0)
+            {
+                btnSearch.Enabled = true;
+                btnSearch.ForeColor = Color.Black;
+            } else
+            {
+                btnSearch.Enabled = false;
+                btnSearch.ForeColor = Color.Gray;
+            }
+        }
     }
 }
